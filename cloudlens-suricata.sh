@@ -23,7 +23,7 @@ sudo apt-get install docker-ce -y
 
 # Launch CloudLens container
 sudo docker pull ixiacom/cloudlens-sandbox-agent 
-sudo docker run -v /:/host -v /var/run/docker.sock:/var/run/docker.sock --privileged --name cloudlens-agent -d --restart=on-failure --net=host ixiacom/cloudlens-sandbox-agent --accept_eula yes --apikey s1CUSM61Wny4G8u6sRUztH4T7N0h76o0853OLPUtO
+sudo docker run -v /:/host -v /var/run/docker.sock:/var/run/docker.sock --privileged --name cloudlens-agent -d --restart=on-failure --net=host ixiacom/cloudlens-sandbox-agent --accept_eula yes --apikey $1
 
 # Install Suricata
 sudo git clone https://github.com/StamusNetworks/Amsterdam.git 
